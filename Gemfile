@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 gem 'faker'
 
+gem 'rails_helper'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
@@ -44,6 +46,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec'
   gem 'pry'
+  gem 'factory_bot_rails'
 end
 
 group :development do

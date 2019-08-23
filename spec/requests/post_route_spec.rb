@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'factory_bot_rails'
 
 describe "post a pet route", :type => :request do
 
