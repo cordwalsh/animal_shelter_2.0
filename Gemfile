@@ -45,6 +45,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'launchy'
   gem 'rspec-rails'
+  gem 'rails_helper'
   gem 'pry'
   gem 'factory_bot_rails'
 end
