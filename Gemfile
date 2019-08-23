@@ -48,6 +48,7 @@ group :development, :test do
   gem 'rails_helper'
   gem 'pry'
   gem 'factory_bot_rails'
+  gem 'factory_bot'
 end
 
 group :development do
