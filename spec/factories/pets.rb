@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :pet do
+  factory :pets do
     type_of_animal { Faker::Creature::Animal.name }
     name { Faker::Creature::Dog.name }
     age { create(:age) }
