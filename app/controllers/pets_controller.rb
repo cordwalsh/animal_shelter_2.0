@@ -11,13 +11,17 @@ class PetsController < ApplicationController
   end
 
   def create
-    @pet = Pet.create(pet_params)
-    json_response(@pet)
+    @pet = Pet.create!(pet_params)
+    json_response(@pet, :created)
   end
 
   def update
     @pet = Pet.find(params[:id])
-    @pet.update(pet_params)
+    if @pet.update!(pet_params)
+      render status: 200, json: {
+        message: "This pet has been updated successfully"
+      }
+    end
   end
 
   def destroy
