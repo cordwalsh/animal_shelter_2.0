@@ -4,7 +4,7 @@ require 'factory_bot_rails'
 describe "post a pet route", :type => :request do
 
   before do
-    post '/pets', params: { :type_of_animal => 'test_type_of_animal', :name => 'test_name', :age => 'test_age', :gender => 'test_gender' }
+    create '/pets', params: { :type_of_animal => 'test_type_of_animal', :name => 'test_name', :age => 'test_age', :gender => 'test_gender' }
   end
 
   it 'returns the pet name' do

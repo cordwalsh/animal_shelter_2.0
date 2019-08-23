@@ -11,9 +11,10 @@ class PetsController < ApplicationController
     json_response(@pet)
   end
 
-  def post
-    @pet = Pet.find(params[:id])
-    json_response(@pet)
+  # def post
+  #   @pet = Pet.find(params[:id])
+  #   json_response(@pet)
+  # end
 
   def create
     @pet = Pet.create!(pet_params)
