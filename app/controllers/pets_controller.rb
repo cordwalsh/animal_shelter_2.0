@@ -29,6 +29,11 @@ class PetsController < ApplicationController
     @pet.destroy
   end
 
+  def random
+    @pet = Pet.random
+    json_response(@pet)
+  end
+
   private
   def json_response(object, status = :ok)
     render json: object, status: status
